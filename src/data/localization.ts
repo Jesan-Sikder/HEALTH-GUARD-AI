@@ -1,0 +1,426 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+export const translations = {
+  en: {
+    title: "HealthGuard AI",
+    tagline: "AI-Powered Preventive Healthcare & Mental Wellness Platform",
+    navDashboard: "Dashboard",
+    navPhysical: "Physical Health",
+    navMental: "Mental Wellness",
+    navInterpreter: "AI Interpreter",
+    navCoach: "Wellness Coach",
+    navEthics: "Ethics & Security",
+    language: "Language",
+
+    // General Summary
+    overallHealthGuardScore: "HealthGuard Score",
+    scoreInterpretation: {
+      excellent: "Excellent",
+      good: "Good",
+      moderate: "Moderate Risk",
+      high: "High Risk",
+    },
+    enterDataToCalculate: "Enter health measurements to calculate your clinical health score.",
+    latestAssessment: "Latest Assessment",
+    needMoreData: "Please complete both physical measurements and mental assessments to see your full Guard score.",
+
+    // Dashboard widgets
+    summaryCardsTitle: "Diagnostic Summary Indicators",
+    diabetesRisk: "Diabetes Risk",
+    heartDiseaseRisk: "Heart Disease Risk",
+    hypertensionRisk: "Hypertension Risk",
+    depressionScore: "Depression Score (PHQ-9)",
+    anxietyScore: "Anxiety Score (GAD-7)",
+    stressScore: "Stress Score (PSS)",
+    overallWellnessIndex: "Combined Health Metres",
+    riskScale: "Risk Scale",
+    severeAlert: "CRITICAL SUPPORT REQUIRED",
+    severeDetails: "Your screening suggests severe clinical indicators. Please seek prompt support from a licensed healthcare professional.",
+
+    // Physical Form
+    physicalFormTitle: "Physical Health Screening Questionnaire",
+    physicalFormDesc: "Submit clinical biometric parameters. Our Explainable Artificial Intelligence (XAI) leverages diagnostic weight models to predict risk scores.",
+    age: "Age (Years)",
+    gender: "Gender",
+    male: "Male",
+    female: "Female",
+    other: "Other",
+    height: "Height (cm)",
+    weight: "Weight (kg)",
+    bmi: "BMI (Body Mass Index)",
+    systolicBP: "Systolic Blood Pressure (mmHg)",
+    diastolicBP: "Diastolic Blood Pressure (mmHg)",
+    glucose: "Fasting Blood Glucose (mmol/L)",
+    cholesterol: "Total Serum Cholesterol (mg/dL)",
+    smoking: "Smoking Habits",
+    neverSmoked: "Never Smoked",
+    formerSmoker: "Former Smoker",
+    currentSmoker: "Current Smoker",
+    exercise: "Weekly Active Exercise (Days)",
+    familyHistory: "Genetics / Family History of Chronic Ailments",
+    yes: "Yes",
+    no: "No",
+    runAssessment: "Calculate Custom Risk Scores",
+    predicting: "Simulating Local ML Weights...",
+    mlHeader: "Machine Learning (ML) Engine Output & SHAP Feature Explanations",
+    shapTitle: "Feature Attribution (SHAP Importance %)",
+    howWeightsCalculated: "Based on biometric weights derived from clinical reference datasets (CDC NHANES and heart disease registries).",
+    lowRisk: "Low Risk",
+    medRisk: "Medium Risk",
+    highRisk: "High Risk",
+    bmiExplanation: "BMI is dynamically computed from height and weight. Safe range is 18.5 - 24.9.",
+
+    // Mental screening
+    mentalTitle: "Clinically Validated Mental Health Screenings",
+    mentalDesc: "We implement international standardized screening questionnaires (PHQ-9, GAD-7, PSS) with instant clinical severity outputs.",
+    phqQuestionHeader: "PHQ-9 Depression Screener (Over the past 2 weeks, how often have you been bothered by...)",
+    gadQuestionHeader: "GAD-7 General Anxiety Screener (Over the past 2 weeks, how often have you been bothered by...)",
+    pssQuestionHeader: "PSS-10 Perceived Stress Scale (In the past month, how often have you felt...)",
+    frequencyOpts: {
+      0: "Not at all",
+      1: "Several days",
+      2: "More than half the days",
+      3: "Nearly every day",
+    },
+    pssOpts: {
+      0: "Never",
+      1: "Almost never",
+      2: "Sometimes",
+      3: "Fairly often",
+      4: "Very often",
+    },
+    submitMental: "Evaluate Mental Wellness Scores",
+    evaluating: "Tabulating response patterns...",
+    severityLabel: "Severity Level",
+    scoreLabel: "Score Output",
+    recommendationsLabel: "Clinically Formulated Recommendations",
+
+    // AI Interpreter
+    interpreterTitle: "AI Health Interpreter Engine",
+    interpreterSubtitle: "Generating Educational Natural Language Syntheses From Clinical Risk Factors",
+    explainBtn: "Interpret Diagnostic Results with HealthGuard AI",
+    interpreting: "Synthesizing medical translations... (Avoids diagnostic claims)",
+    interpretationTitle: "Clinical Interpretation Brief",
+    howItWorks: "How it works: Our advanced large language model parses your individual metrics, notes biological synergies (e.g. how blood pressure couples with stress), and returns educational wisdom directly linked to primary care registries.",
+    disclaimerText: "Caution: This interpretation does not constitute a formal diagnosis or medical advice. Consult medical authorities.",
+
+    // Coach Chat
+    coachTitle: "AI Preventive Health & Wellness Coach",
+    coachSubtitle: "A friendly chatbot specialized in stress relief, sleep hygiene, nutrition, and lifestyle optimization.",
+    placeholder: "Type a preventive health question...",
+    send: "Send",
+    coachIntro: "Welcome! I am your AI Preventive Wellness Coach. My purpose is to share nutritional advice, stress release, and exercise templates. Please note: I am not a doctor and cannot provide biological diagnoses. If you have any medical symptoms, ask a professional! How can I enrich your health journey today?",
+    quickQueries: {
+      title: "Common Wellness Inquiries",
+      1: "Suggest a low-glycemic meal template",
+      2: "Teach me a breathing meditation for anxiety",
+      3: "What are safe guidelines for aerobic cardio?",
+      4: "How can I improve sleep hygiene?",
+    },
+
+    // Ethics & Security
+    ethicsTitle: "Ethics and Responsible Artificial Intelligence Principles",
+    ethicsSubtitle: "Designed specifically to meet strict privacy compliance models and promote explainable machine learning.",
+    p1Title: "1. Complete Data Sovereignty",
+    p1Desc: "Your physical health parameters and emotional screenings are stored purely inside local clinical scopes. We never sell, transmit, or expose personal identity indexes. All biometric data remains private.",
+    p2Title: "2. Clinically Audited & Explainable AI (SHAP)",
+    p2Desc: "Unlike standard black-box diagnostics, HealthGuard uses explicit feature attribution percentages. You see exactly how parameters (e.g. high blood glucose or genetic family risk) impact predictions.",
+    p3Title: "3. Rigorous Safety Guards",
+    p3Desc: "Our platform listens for clinically critical boundaries. If mental screening reports severe Depression markers on the PHQ-9 or extreme anxiety metrics, safety mechanisms auto-activate to connect you to local lifelines.",
+    p4Title: "4. Explicit Educational Scope",
+    p4Desc: "We distinguish educational health guidance from formal biological prescriptions. The system provides transparency about what the AI understands and reminds you of professional health care boundaries.",
+
+    // Report PDF
+    pdfTitle: "Professional Health Report",
+    pdfDesc: "Download or print a clean clinical summary page complete with risk attributions, health score dials, and AI interpretation logs.",
+    printBtn: "Generate Health Summary Document",
+    sampleDataNotice: "Demo Clinical Accounts",
+    loadSampleNormal: "Load Normal Biometrics File",
+    loadSampleElevated: "Load Elevated Risk Biometrics File",
+    activeRecommendations: "Personalized Preventive Recommendations",
+  },
+  bn: {
+    title: "HealthGuard AI",
+    tagline: "এআই-চালিত প্রতিরোধমূলক স্বাস্থ্যসেবা ও মানসিক সুস্থতা প্ল্যাটফর্ম",
+    navDashboard: "ড্যাশবোর্ড",
+    navPhysical: "শারীরিক স্বাস্থ্য",
+    navMental: "মানসিক সুস্থতা",
+    navInterpreter: "এআই ব্যাখ্যামূলক ইঞ্জিন",
+    navCoach: "ওয়েলনেস কোচ",
+    navEthics: "নীতিমালা ও নিরাপত্তা",
+    language: "ভাষা",
+
+    // General Summary
+    overallHealthGuardScore: "হেলথগার্ড স্কোর",
+    scoreInterpretation: {
+      excellent: "চমৎকার",
+      good: "ভালো",
+      moderate: "মাঝারি ঝুঁকি",
+      high: "উচ্চ ঝুঁকি",
+    },
+    enterDataToCalculate: "আপনার ক্লিনিকাল স্বাস্থ্য স্কোর গণনা করতে শারীরিক পরিমাপগুলি প্রবেশ করুন।",
+    latestAssessment: "সর্বশেষ মূল্যায়ন",
+    needMoreData: "দয়া করে আপনার সম্পূর্ণ হেলথগার্ড স্কোর দেখতে শারীরিক পরিমাপ এবং মানসিক মূল্যায়ন উভয়ই সম্পূর্ণ করুন।",
+
+    // Dashboard widgets
+    summaryCardsTitle: "ডায়াগনস্টিক সারাংশ নির্দেশক",
+    diabetesRisk: "ডায়াবেটিস ঝুঁকি",
+    heartDiseaseRisk: "হৃদরোগ ঝুঁকি",
+    hypertensionRisk: "উচ্চ রক্তচাপের ঝুঁকি",
+    depressionScore: "ডিপ্রেশন স্কোর (PHQ-9)",
+    anxietyScore: "অ্যাংজাইটি স্কোর (GAD-7)",
+    stressScore: "স্ট্রেস স্কোর (PSS)",
+    overallWellnessIndex: "সম্মিলিত স্বাস্থ্য মিটার",
+    riskScale: "ঝুঁকির মাত্রা",
+    severeAlert: "জরুরী ক্লিনিকাল সহায়তা প্রয়োজনীয়",
+    severeDetails: "আপনার মূল্যায়ন তীব্র মানসিক জটিলতার ক্লিনিকাল ইঙ্গিত দেয়। দয়া করে একজন লাইসেন্সপ্রাপ্ত মানসিক স্বাস্থ্য পেশাদারের সাথে পরামর্শ করুন।",
+
+    // Physical Form
+    physicalFormTitle: "শারীরিক স্বাস্থ্য স্ক্রীনিং প্রশ্নাবলী",
+    physicalFormDesc: "আপনার বায়োমেট্রিক প্যারামিটার জমা দিন। আমাদের ব্যাখ্যাযোগ্য কৃত্রিম বুদ্ধিমত্তা (XAI) ঝুঁকি পূর্বাভাসের জন্য ডায়াগনস্টিক ওজন মডেল ব্যবহার করে।",
+    age: "বয়স (বছর)",
+    gender: "লিঙ্গ",
+    male: "পুরুষ",
+    female: "মহিলা",
+    other: "অন্যান্য",
+    height: "উচ্চতা (সেমি)",
+    weight: "ওজন (কেজি)",
+    bmi: "বিএমআই (বডি মাস ইনডেক্স)",
+    systolicBP: "সিস্টোলিক রক্তচাপ (mmHg)",
+    diastolicBP: "ডায়াস্টোলিক রক্তচাপ (mmHg)",
+    glucose: "খালি পেটে শর্করা (mmol/L)",
+    cholesterol: "সেরাম কোলেস্টেরল (mg/dL)",
+    smoking: "ধূমপানের অভ্যাস",
+    neverSmoked: "কখনো ধুমপান করিনি",
+    formerSmoker: "প্রাক্তন ধূমপায়ী",
+    currentSmoker: "বর্তমান ধূমপায়ী",
+    exercise: "নির্ধারিত ব্যায়াম (সপ্তাহে দিন)",
+    familyHistory: "বংশগত রোগ / ক্রনিক রোগের পারিবারিক ইতিহাস",
+    yes: "হ্যাঁ",
+    no: "না",
+    runAssessment: "ঝুঁকি স্কোর গণনা করুন",
+    predicting: "স্থানীয় এমএল ওজন অনুকরণ করা হচ্ছে...",
+    mlHeader: "মেশিন লার্নিং (ML) ইঞ্জিন আউটপুট এবং SHAP ফিচার ব্যাখ্যা",
+    shapTitle: "ফিচার অবদান (SHAP গুরুত্ব %)",
+    howWeightsCalculated: "সিডিসি এনহান্স এবং কার্ডিয়াক রেজিস্ট্রি ডেটাসেট থেকে সংগৃহীত গাণিতিক ওজনের ওপর ভিত্তি করে সাজানো।",
+    lowRisk: "কম ঝুঁকি",
+    medRisk: "মাঝারি ঝুঁকি",
+    highRisk: "উচ্চ ঝুঁকি",
+    bmiExplanation: "উচ্চতা এবং ওজন থেকে স্বয়ংক্রিয়ভাবে বিএমআই হিসাব করা হয়। নিরাপদ মাত্রা: ১৮.৫ - ২৪.৯।",
+
+    // Mental screening
+    mentalTitle: "ক্লিনিক্যালি যাচাইকৃত মানসিক স্বাস্থ্য স্ক্রীনিং",
+    mentalDesc: "আমরা তাত্ক্ষণিক ক্লিনিকাল তীব্রতা নির্ণয়ের জন্য আন্তর্জাতিক মানের স্ক্রীনিং প্রশ্নাবলী (PHQ-9, GAD-7, PSS) ব্যবহার করি।",
+    phqQuestionHeader: "PHQ-9 ডিপ্রেশন স্ক্রীনার (গত ২ সপ্তাহে, আপনি কত ঘন ঘন নিম্নলিখিত সমস্যায় ভুগেছেন...)",
+    gadQuestionHeader: "GAD-7 উদ্বেগ স্ক্রীনার (গত ২ সপ্তাহে, আপনি কত ঘন ঘন নিম্নলিখিত সমস্যায় ভুগেছেন...)",
+    pssQuestionHeader: "PSS-10 মানসিক চাপ স্কেল (গত ১ মাসে, আপনি কত ঘন ঘন...)",
+    frequencyOpts: {
+      0: "একদমই না",
+      1: "কয়েক দিন",
+      2: "অর্ধেকের বেশি দিন",
+      3: "প্রতিদিন বললেই চলে",
+    },
+    pssOpts: {
+      0: "কখনোই না",
+      1: "বলতে গেলে কখনোই না",
+      2: "মাঝে মাঝে",
+      3: "প্রায়শই",
+      4: "খুব ঘন ঘন",
+    },
+    submitMental: "মানসিক সুস্থতা মূল্যায়ন করুন",
+    evaluating: "উত্তর প্যাটার্ন বিশ্লেষণ করা হচ্ছে...",
+    severityLabel: "তীব্রতার স্তর",
+    scoreLabel: "প্রাপ্ত স্কোর",
+    recommendationsLabel: "ক্লিনিক্যালি সেট করা প্রতিরোধমূলক পরামর্শ",
+
+    // AI Interpreter
+    interpreterTitle: "এআই হেলথ ইন্টারপ্রেটার ইঞ্জিন",
+    interpreterSubtitle: "ডায়াগনস্টিক ফলাফল থেকে শিক্ষামূলক সহজ অনুবাদের সারাংশ তৈরি",
+    explainBtn: "হেলথগার্ড এআই দিয়ে ডায়াগনস্টিক পরীক্ষার ব্যাখ্যা তৈরি করুন",
+    interpreting: "মেডিকেল সহজ অনুবাদ প্রস্তুত হচ্ছে... (রোগের সরাসরি দাবি এড়িয়ে চলে)",
+    interpretationTitle: "ক্লিনিকাল ব্যাখ্যামূলক বিবরণ",
+    howItWorks: "কার্যপ্রণালী: আমাদের উন্নত লার্জ ল্যাঙ্গুয়েজ মডেল আপনার বায়োমেট্রিক তথ্য স্ক্যান করে এবং রোগ নির্ণয়ের জটিল ফর্মুলার বদলে সহজ শিক্ষণীয় ভাষায় প্রতিরোধ এবং জীবনযাত্রার নির্দেশিকা তুলে ধরে।",
+    disclaimerText: "সতর্কতা: এই এআই পর্যালোচনা কোনো আনুষ্ঠানিক জীববিজ্ঞান রোগনির্ণয় বা ডাক্তারের চিকিৎসার বিকল্প নয়। অবিলম্বে পেশাদার ডাক্তারের পরামর্শ নিন।",
+
+    // Coach Chat
+    coachTitle: "এআই স্বাস্থ্য ও সুস্থতা কোচ",
+    coachSubtitle: "মানসিক চাপ নিয়ন্ত্রণ, স্বাস্থ্যকর ঘুম, পুষ্টি এবং শারীরিক কসরত উন্নত করার জন্য একটি বন্ধুত্বপূর্ণ চ্যাটবট।",
+    placeholder: "প্রতিরোধমূলক স্বাস্থ্য সংক্রান্ত জিজ্ঞাসা...",
+    send: "পাঠান",
+    coachIntro: "স্বাগতম! আমি আপনার হেলথগার্ড এআই কোচ। আমার লক্ষ্য হলো আপনাকে পুষ্টি পরামর্শ, শ্বাস-প্রশ্বাসের ব্যায়াম এবং জীবনযাত্রা প্রণালী শেয়ার করা। মনে রাখবেন: আমি কোনো চিকিৎসক নই এবং সরাসরি ক্লিনিকাল ওষুধ বা রোগ নির্ণয় করতে পারি না। কোনো জটিল সমস্যায় ডাক্তারের সহায়তা নিন! আজ আমি কীভাবে আপনার জীবনের স্বাস্থ্য উন্নত করতে পারি?",
+    quickQueries: {
+      title: "সাধারণ সুস্থতার প্রশ্নসমূহ",
+      1: "একটি কম শর্করা যুক্ত খাবারের রুটিন দেখাও",
+      2: "অ্যাংজাইটি কমাতে একটি শ্বাসের ধ্যান সাজান",
+      3: "কার্ডিও বা অ্যারোবিক ব্যায়ামের জন্য নিরাপদ নির্দেশিকা কী?",
+      4: "ঘুমের গভীরতা কীভাবে বৃদ্ধি করা যায়?",
+    },
+
+    // Ethics & Security
+    ethicsTitle: "নীতিমালা এবং দায়িত্বশীল কৃত্রিম বুদ্ধিমত্তা (AI) নীতিমালা",
+    ethicsSubtitle: "কঠোর ব্যবহারকারী গোপনীয়তা বজায় রাখা এবং ব্যাখ্যাযোগ্য মেশিন লার্নিং প্রমাণ করার লক্ষ্যে ডিজাইন করা।",
+    p1Title: "১. ডেটা সার্বভৌমিকতা নিশ্চিতকরণ",
+    p1Desc: "আপনার প্রবেশের সকল ডাটা এবং পরীক্ষার ফলাফল শুধুমাত্র আপনার নিজের ব্রাউজার এবং লোকাল ডিভাইসে সংরক্ষিত থাকে। আমরা কোনো বায়োমেট্রিক পরিচয় বিক্রি করি না।",
+    p2Title: "২. ক্লিনিক্যালি ব্যাখ্যাযোগ্য এআই ও SHAP",
+    p2Desc: "প্রথাগত ব্ল্যাক-বক্স আলগোরিদিমের পরিবর্তে, হেলথগার্ড সুনির্দিষ্ট গণিত ফিচার অবদান প্রকাশ করে। আপনি সরাসরি দেখতে পান কোন বিএমআই বা সুগার ভ্যালু কত শতাংশ ঝুঁকি বাড়িয়েছে।",
+    p3Title: "৩. স্বয়ংক্রিয় সুরক্ষা ও লাইফলাইন",
+    p3Desc: "যদি আপনার PHQ-9 বা GAD-7 ডায়াগনস্টিক তীব্র বিষণ্নতার ইঙ্গিত দেয়, সিস্টেম তাৎক্ষণিকভাবে সতর্কতা স্ক্রিনে বাংলাদেশের সরকারি মানসিক হেল্পলাইন এবং ডাক্তারের সাহায্য পাবার তথ্য তুলে ধরে।",
+    p4Title: "৪. শিক্ষামূলক নির্দেশিকা এবং ডাক্তারের পরিপূরক",
+    p4Desc: "আমরা এআই প্রযুক্তিকে ডাক্তারের সরাসরি প্রতিদ্বন্দ্বী হিসেবে নয়, বরং আগাম সচেতনতা বাড়ানোর হাতিয়ার হিসেবে সাজিয়েছি। এতে ব্যবহারকারী সহজে নিজের শারীরিক গতিবিধি জেনে সঠিক পেশাদার চিকিৎসকের কাছে প্রয়োজনীয় সময়ে পৌঁছাতে পারেন।",
+
+    // Report PDF
+    pdfTitle: "পেশাদার স্বাস্থ্যের বিবরণী",
+    pdfDesc: "আপনার স্বাস্থ্য নির্দেশক ডায়াল স্কোর এবং এআই ব্যাখ্যামূলক পর্যালোচনা সহ একটি পেশাদার মেডিকেল কপি ডাউনলোড বা প্রিন্ট করুন।",
+    printBtn: "স্বাস্থ্যের সারাংশ বিবরণ তৈরি করুন",
+    sampleDataNotice: "ডেমো ক্লিনিকাল অ্যাকাউন্ট",
+    loadSampleNormal: "স্বাভাবিক বায়োমেট্রিক ডাটা লোড করুন",
+    loadSampleElevated: "উচ্চ ঝুঁকিপূর্ণ বায়োমেট্রিক ডাটা লোড করুন",
+    activeRecommendations: "আপনার ব্যক্তিগত সুবিধাজনক পরামর্শসমূহ",
+  },
+};
+
+export const PHQ9_QUESTIONS = [
+  {
+    id: 1,
+    en: "Little interest or pleasure in doing things",
+    bn: "কাজকর্মে খুবই কম আগ্রহ বা আনন্দ পাওয়া",
+  },
+  {
+    id: 2,
+    en: "Feeling down, depressed, or hopeless",
+    bn: "মন খারাপ, বিষণ্ণতা অথবা অসহায় বোধ করা",
+  },
+  {
+    id: 3,
+    en: "Trouble falling or staying asleep, or sleeping too much",
+    bn: "ঘুমাতে সমস্যা, মাঝরাতে ঘুম ভেঙে যাওয়া, অথবা অতিরিক্ত ঘুম হওয়া",
+  },
+  {
+    id: 4,
+    en: "Feeling tired or having little energy",
+    bn: "ক্লান্তি ভাব থাকা অথবা শরীরে শক্তির অভাব বোধ করা",
+  },
+  {
+    id: 5,
+    en: "Poor appetite or overeating",
+    bn: "খাবারের রুচি কমে যাওয়া অথবা অতিরিক্ত খাওয়ার প্রবণতা",
+  },
+  {
+    id: 6,
+    en: "Feeling bad about yourself — or that you are a failure or have let yourself or your family down",
+    bn: "নিজের ব্যাপারে নেতিবাচক ধারণা — নিজেকে ব্যর্থ মনে করা বা পরিবারের প্রত্যাশা পূরণ করতে না পারা",
+  },
+  {
+    id: 7,
+    en: "Trouble concentrating on things, such as reading the newspaper or watching television",
+    bn: "দৈনন্দিন কাজে মনোযোগ দিতে সমস্যা হওয়া, যেমন খবরের কাগজ পড়া বা টিভি দেখা",
+  },
+  {
+    id: 8,
+    en: "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual",
+    bn: "কথা বলা বা হাঁটার গতি অনেক ধীর হয়ে যাওয়া যা অন্যদের চোখে পড়ে? অথবা অতিরিক্ত অস্থিরতা ও ছটফট করা",
+  },
+  {
+    id: 9,
+    en: "Thoughts that you would be better off dead or of hurting yourself in some way",
+    bn: "এমন মনে হওয়া যে নিজের জীবনাবসান করা ভালো অথবা নিজেকে কোনোভাবে আঘাত করার চিন্তা আসা",
+  },
+];
+
+export const GAD7_QUESTIONS = [
+  {
+    id: 1,
+    en: "Feeling nervous, anxious, or on edge",
+    bn: "অতিরিক্ত নার্ভাস বোধ করা, উদ্বেগ বা অস্থিরতা থাকা",
+  },
+  {
+    id: 2,
+    en: "Not being able to stop or control worrying",
+    bn: "উদ্বেগ বা কোনো ভয়ের চিন্তা কমানো বা নিয়ন্ত্রণ করতে না পারা",
+  },
+  {
+    id: 3,
+    en: "Worrying too much about different things",
+    bn: "এলোমেলো বা বিভিন্ন ধরণের তুচ্ছ বিষয় নিয়ে অতিরিক্ত বেশি দুশ্চিন্তা করা",
+  },
+  {
+    id: 4,
+    en: "Trouble relaxing",
+    bn: "স্বস্তি বা শান্ত হয়ে বিশ্রাম নিতে কষ্ট হওয়া",
+  },
+  {
+    id: 5,
+    en: "Being so restless that it is hard to sit still",
+    bn: "অতিরিক্ত অস্থির লাগা যাতে এক জায়গায় শান্ত হয়ে বসে থাকা কঠিন হয়ে পড়ে",
+  },
+  {
+    id: 6,
+    en: "Becoming easily annoyed or irritable",
+    bn: "খুব দ্রুত বা অল্পতেই মেজাজ খিটখিটে হওয়া বা রেগে যাওয়া",
+  },
+  {
+    id: 7,
+    en: "Feeling afraid as if something awful might happen",
+    bn: "সবসময় এক গভীর ভয় কাজ করা যেন খারাপ কিছু ঘটতে চলেছে",
+  },
+];
+
+export const PSS_QUESTIONS = [
+  {
+    id: 1,
+    en: "How often have you been upset because of something that happened unexpectedly?",
+    bn: "অপ্রত্যাশিত ঘটে যাওয়া কোনো ঘটনার কারণে আপনি কতটা বিরক্ত এবং ক্ষুব্ধ হয়েছেন?",
+  },
+  {
+    id: 2,
+    en: "How often have you felt that you were unable to control the important things in your life?",
+    bn: "জীবনের গুরুত্বপূর্ণ সিদ্ধান্তগুলো আপনার নিয়ন্ত্রণের বাইরে চলে গেছে বলে কতটা মনে হয়েছে?",
+  },
+  {
+    id: 3,
+    en: "How often have you felt nervous and 'stressed'?",
+    bn: "কত ঘন ঘন আপনি নিজেকে অত্যন্ত নার্ভাস বা মানসিক চাপে ভারাক্রান্ত মনে করেছেন?",
+  },
+  {
+    id: 4,
+    en: "How often have you felt confident about your ability to handle your personal problems?",
+    bn: "আপনার ব্যক্তিগত সমস্যাসমূহ সুন্দরভাবে সমাধান করার ক্ষমতায় আপনি কতটা আত্মবিশ্বাসী ছিলেন? (বিপরীত গণনা)",
+    reversed: true,
+  },
+  {
+    id: 5,
+    en: "How often have you felt that things were going your way?",
+    bn: "সবকিছু আপনার ইচ্ছা এবং পরিকল্পনা অনুযায়ী এগিয়ে চলেছে বলে কতটা মনে হয়েছে? (বিপরীত গণনা)",
+    reversed: true,
+  },
+  {
+    id: 6,
+    en: "How often have you found that you could not cope with all the things that you had to do?",
+    bn: "আপনার করণীয় দায়িত্বগুলোর সাথে সামঞ্জস্যতা করতে পারছেন না বা পেরে উঠছেন না বলে কতটা মনে হয়েছে?",
+  },
+  {
+    id: 7,
+    en: "How often have you been able to control irritations in your life?",
+    bn: "আপনার জীবনের ছোটখাটো বিরক্তি বা ঝামেলার অনুভূতিগুলো কতটা সুন্দরভাবে দমন করতে পেরেছেন? (বিপরীত গণনা)",
+    reversed: true,
+  },
+  {
+    id: 8,
+    en: "How often have you felt that you were on top of things?",
+    bn: "সব কাজ বা দায়িত্বের ওপর আপনার পূর্ণ নিয়ন্ত্রণ ও আধিপত্য রয়েছে বলে কতটা মনে হয়েছে? (বিপরীত গণনা)",
+    reversed: true,
+  },
+  {
+    id: 9,
+    en: "How often have you been angered because of things that were outside of your control?",
+    bn: "নিজের নিয়ন্ত্রণের বাইরের পরিস্থিতিগুলোর প্রতি আপনি কত ঘন ঘন রাগান্বিত বা রাগে ফেটে পড়েছেন?",
+  },
+  {
+    id: 10,
+    en: "How often have you felt difficulties were piling up so high that you could not overcome them?",
+    bn: "মনে হয়েছে জীবনের কঠিন সমস্যাগুলো এতো পর্বতসম উঁচু জমা হচ্ছে যে তা কাটিয়ে ওঠা অসম্ভব?",
+  },
+];

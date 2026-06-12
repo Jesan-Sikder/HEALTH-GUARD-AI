@@ -1,0 +1,6 @@
+{
+  "name": "HealthGuard AI",
+  "description": "AI-Powered Preventive Healthcare & Mental Wellness Platform featuring disease risk predictors, mental screenings, and custom AI interpretations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
